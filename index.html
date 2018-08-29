@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -8,13 +8,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/app.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.2.26/angular.min.js"></script>
     <script src="app.js"></script>
 </head>
+
 <body>
-    <div id="header-wrapper" ng-controler="HeaderCtrl">
-        <span class="logo pull-left">BooKart</span>
-        <span class="tagline pull-left">Million books</span>
+    <div id="header-wrapper" ng-controller="HeaderCtrl">
+        <span class="logo pull-left">{{appDetails.title}}</span>
+        <span class="tagline pull-left">{{appDetails.tagline}}</span>
         <div class="nav-wrapper pull-left">
             <ul class="nav nav-pills">
                 <li class="active"><a href="#">Books</a></li>
@@ -23,4 +24,5 @@
         </div>
     </div>
 </body>
+
 </html>

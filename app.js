@@ -1,6 +1,6 @@
 var HeaderCtrl = function($scope){
     $scope.appDetails = {
-        title:'',
-        tagline:''
-    }
-}
+        title:'BooKart',
+        tagline:'Million books'
+    };
+};
